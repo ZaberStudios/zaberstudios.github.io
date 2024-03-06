@@ -84,6 +84,27 @@
         background-color: #2e2b3b;
       }
 
+      .small-text {
+        font-size: 1rem;
+      }
+
+      @media screen and (max-width: 768px) {
+        .hero-text {
+          font-size: 2rem;
+          line-height: 3rem;
+        }
+
+        .value {
+          font-size: 2rem;
+          margin-bottom: 10px;
+        }
+
+        .small-text {
+          font-size: 0.75rem;
+          line-height: 1rem;
+        }
+      }
+
       /* .hero {        
         width: 100%;
         height: 100%;
@@ -99,7 +120,7 @@
       class="gray-bg white-text rounded-2xl rounded-2xl shadow-black shadow-lg"
     >
       <header
-        class="absolute mt-20 ml-20 rounded-2xl flex justify-between items-center pb-0 z-50"
+        class="absolute mt-10 ml-10 sm:mt-20 sm:ml-20 rounded-2xl flex justify-between items-center pb-0 z-50"
       >
         <div class="flex items-center space-x-4">
           <img
@@ -107,25 +128,27 @@
             alt="Zaber Studios logo"
             class="mx-auto w-16 h-auto"
           />
-          <div class="italic text-4xl">ZABER STUDIOS</div>
+          <div class="italic text-xl sm:text-4xl">ZABER STUDIOS</div>
         </div>
         <nav></nav>
       </header>
 
       <main>
         <section
-          class="flex flex-col h-screen p-20 relative hero bg-contain bg-no-repeat bg-hero rounded-t-xl overflow-hidden"
+          class="flex flex-col h-screen p-10 sm:p-20 relative hero bg-contain bg-no-repeat bg-hero rounded-t-xl overflow-hidden"
         >
           <img
             src="./images/hero.jpeg"
             alt="hero"
-            class="w-[150vw] h-auto -right-[30vw] -bottom-[15vw] absolute -rotate-45"
+            class="sm:visible invisible w-[150vw] h-auto -right-[40vw] -bottom-[10vw] absolute -rotate-45"
           />
-          <p class="hero-text w-3/4 mt-24 mb-20 z-40">
+          <p
+            class="hero-text sm:w-3/4 mt-24 mb-20 z-40 sm:text-left text-center"
+          >
             DEVELOPING TOP TIER GAMES ON
             <span class="italic bungee-regular">ROBLOX</span>
           </p>
-          <div class="flex flex-col items-center justify-center mr-auto">
+          <div class="flex flex-col items-center justify-center sm:mr-auto">
             <a
               href="#about"
               class="text-2xl text-center bg-[#C32EFF] p-4 rounded-md hover:bg-[#8A2BE2] transition-all duration-300"
@@ -136,45 +159,47 @@
         </section>
 
         <section
-          class="text-center flex flex-col p-20 gap-20 justify-center items-center h-screen text-[#C32EFF] text-4xl bungee-regular"
+          class="text-center flex flex-col p-10 sm:p-20 gap-6 sm:gap-20 justify-center items-center min-h-screen text-[#C32EFF] text-lg sm:text-4xl bungee-regular"
           id="about"
         >
           <div class="white-text">Some of our Numbers</div>
           <div
-            class="flex flex-col sm:flex-row justify-around gap-20 items-center"
+            class="flex flex-col sm:flex-row flex-wrap justify-around gap-6 sm:gap-20 items-center"
           >
-            <div class="white-bg p-12 rounded-lg shadow-lg">
+            <div class="white-bg p-4 sm:p-12 rounded-lg shadow-lg">
               <p class="font-bold value" akhi="250000000">0</p>
-              <p class="text-base">visits</p>
+              <p class="small-text">visits</p>
               <hr class="my-4 border-[#2e2b3b]" />
-              <p class="text-base">
+              <p class="small-text">
                 That's almost the entire population of the US!
               </p>
             </div>
-            <div class="white-bg p-12 rounded-lg shadow-lg">
+            <div class="white-bg p-4 sm:p-12 rounded-lg shadow-lg">
               <p class="font-bold value" akhi="2800000">0</p>
-              <p class="text-base">monthly active users (MAU)</p>
+              <p class="small-text">monthly active users (MAU)</p>
               <hr class="my-4 border-[#2e2b3b]" />
-              <p class="text-base">
+              <p class="small-text">
                 That's all of San Francisco playing every month!
               </p>
             </div>
           </div>
-          <div class="white-bg p-12 rounded-lg shadow-lg">
+          <div class="white-bg p-4 sm:p-12 rounded-lg shadow-lg">
             <p class="font-bold value" akhi="80000000">0</p>
-            <p class="text-base">hours played</p>
+            <p class="small-text">hours played</p>
             <hr class="my-4 border-[#2e2b3b]" />
-            <p class="text-base">
+            <p class="small-text">
               Enough to binge your favourite TV show for 9130 years!
             </p>
           </div>
         </section>
 
         <section
-          class="text-center flex flex-col justify-center items-center h-screen p-20"
+          class="text-center flex flex-col justify-center items-center h-screen p-10 sm:p-20"
         >
-          <h2 class="mb-12 text-4xl font-bold">Discover Our Games</h2>
-          <div class="bg-[#faf0e6] md:w-1/2 w-3/4 p-4 rounded-md mb-12">
+          <h2 class="mb-12 text-xl sm:text-4xl font-bold">
+            Discover Our Games
+          </h2>
+          <div class="bg-[#faf0e6] sm:w-1/2 w-full p-4 rounded-md mb-12">
             <img
               src="./images/taxiboss2.png"
               alt="Taxi Boss logo"
