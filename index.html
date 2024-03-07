@@ -49,8 +49,14 @@
         font-style: normal;
       }
 
+      .bungee-inline {
+        font-family: 'Bungee Inline', sans-serif;
+        font-weight: 400;
+        font-style: normal;
+      }
+
       .bungee-regular {
-        font-family: 'Bungee', sans-serif;
+        font-family: 'Bungee Inline', sans-serif;
         font-weight: 400;
         font-style: normal;
       }
@@ -66,7 +72,7 @@
       }
 
       .value {
-        font-size: 3.5rem;
+        font-size: 2.5rem;
       }
 
       .white-text {
@@ -148,7 +154,7 @@
       class="gray-bg white-text rounded-2xl rounded-2xl shadow-black shadow-lg relative"
     >
       <header
-        class="absolute w-full pt-10 px-10 sm:pt-20 sm:px-20 rounded-2xl flex justify-between items-center pb-0 z-50"
+        class="absolute w-full pt-10 px-10 sm:pt-10 sm:px-20 rounded-2xl flex justify-between items-center pb-0 z-50"
       >
         <div class="flex items-center space-x-4">
           <img
@@ -187,7 +193,7 @@
         </section>
 
         <section
-          class="text-center flex flex-col p-4 md:p-20 gap-6 sm:gap-20 justify-center items-center min-h-screen text-[#C32EFF] text-lg sm:text-4xl bungee-regular"
+          class="text-center flex flex-col p-4 md:p-20 gap-6 sm:gap-20 justify-center items-center min-h-screen text-[#C32EFF] text-lg sm:text-2xl !bungee-inline"
           id="about"
         >
           <div class="white-text">Some of our Numbers</div>
@@ -195,80 +201,87 @@
             class="flex flex-col md:flex-row flex-wrap justify-around gap-6 sm:gap-20 items-center w-full"
           >
             <div
+              data-tilt
+              data-tilt-glare="true"
+              data-tilt-max-glare="0.1"
               class="bg-gray-900 rounded-2xl shadow-lg shadow-black relative overflow-hidden w-full md:w-[33vw] md:h-[20vw] flex flex-col justify-between"
             >
-              <div class="mt-12 mx-12">
+              <div class="mt-10 mx-10 z-50">
                 <p class="font-bold value" akhi="250000000">0</p>
-                <p class="small-text">visits</p>
+                <p class="small-text white-text">visits</p>
               </div>
               <div class="flex items-center justify-between w-full">
                 <div
-                  class="w-1/2 h-auto relative -left-0 -bottom-0 flex items-center justify-center"
+                  class="basis-1/2 h-auto relative -left-0 -bottom-0 flex items-center justify-center"
                 >
+                  <div class="sun-green w-[400px] h-[400px] absolute"></div>
                   <img
                     src="./images/worldwide.png"
                     alt="World"
-                    class="w-full h-auto absolute"
+                    class="w-full h-auto absolute z-30"
                   />
-                  <div class="sun-green w-64 h-64 absolute"></div>
                 </div>
                 <p
-                  class="text-sm md:text-xl white-text md:mt-0 mt-12 mx-12 mb-12"
+                  class="basis-1/2 text-sm md:text-lg white-text md:mt-0 m-10 mr-0 bungee-regular z-30"
                 >
                   THAT'S 3X THE POPULATION OF GERMANY!
                 </p>
               </div>
             </div>
             <div
-              class="bg-gray-900 rounded-2xl shadow-lg shadow-black relative overflow-hidden w-full md:w-[33vw] md:h-[20vw] flex flex-col justify-between"
+              data-tilt
+              data-tilt-glare="true"
+              data-tilt-max-glare="0.1"
+              class="bg-gray-900 rounded-2xl shadow-lg shadow-black relative overflow-hidden w-full md:w-[33vw] md:h-[20vw] flex flex-col justify-between card"
             >
-              <div class="mt-12 mx-12">
+              <div class="mt-10 mx-10 z-50">
                 <p class="font-bold value" akhi="2800000">0</p>
-                <p class="small-text">Monthly Active Users</p>
+                <p class="small-text white-text">Monthly Active Users</p>
               </div>
-              <div class="flex items-center justify-between w-full">
+              <div class="flex items-center gap-4 justify-between w-full">
                 <p
-                  class="text-sm md:text-xl white-text md:mt-0 mt-12 mx-12 mb-12"
+                  class="basis-1/2 text-sm md:text-lg white-text md:mt-0 m-10 mr-0 z-30"
                 >
                   32X FULL CAPACITY WEMBLEY STADIUMS!
                 </p>
                 <div
-                  class="w-1/2 h-auto relative -right-0 -bottom-0 flex items-center justify-center"
+                  class="basis-1/2 h-auto relative -right-[5%] bottom-[40%] flex items-center justify-center"
                 >
+                  <div class="sun-purple w-[400px] h-[400px] absolute"></div>
                   <img
                     src="./images/stadium.png"
                     alt="Stadium"
-                    class="w-full h-auto absolute"
+                    class="w-full h-auto absolute z-30"
                   />
-                  <div class="sun-purple w-64 h-64 absolute"></div>
                 </div>
               </div>
             </div>
           </div>
           <div
-            class="bg-gray-900 rounded-2xl shadow-lg shadow-black relative overflow-hidden w-full md:w-[33vw] md:h-[20vw] flex flex-col justify-between"
+            data-tilt
+            data-tilt-glare="true"
+            data-tilt-max-glare="0.1"
+            class="bg-gray-900 rounded-2xl shadow-lg shadow-black relative overflow-hidden w-full md:w-[33vw] md:h-[20vw] flex flex-col justify-between card"
           >
             <div
               class="sun-green w-[300px] h-[300px] absolute -right-[100px] -top-[100px] z-0"
             ></div>
-            <div class="mt-12 mx-12 z-50">
+            <div class="mt-10 mx-10 z-50">
               <p class="font-bold value" akhi="80000000">0</p>
-              <p class="small-text">HOURS PLAYED</p>
+              <p class="small-text white-text">HOURS PLAYED</p>
             </div>
             <div class="flex items-center justify-between w-full">
               <div
                 class="w-1/2 h-auto relative -left-0 -bottom-0 flex items-center justify-center"
               >
+                <div class="sun-purple w-[400px] h-[400px] absolute"></div>
                 <img
                   src="./images/save-time.png"
                   alt="Stadium"
-                  class="w-full h-auto absolute"
+                  class="w-full h-auto absolute z-30"
                 />
-                <div class="sun-purple w-[400px] h-[400px] absolute"></div>
               </div>
-              <p
-                class="text-sm md:text-xl white-text md:mt-0 mt-12 mx-12 mb-12"
-              >
+              <p class="text-sm md:text-lg white-text md:mt-0 m-10 mr-0 z-30">
                 THAT'S 9,133 YEARS!
               </p>
             </div>
@@ -284,8 +297,14 @@
           <div
             class="flex items-center justify-around flex-wrap sm:gap-20 gap-10"
           >
-            <div
+            <a
               class="w-full md:w-[33vw] md:h-[20vw] w-full rounded-2xl mb-12 relative shadow-lg shadow-black"
+              href="https://www.roblox.com/games/7305309231/Taxi-Boss"
+              rel="noopener noreferrer"
+              target="_blank"
+              data-tilt
+              data-tilt-glare="true"
+              data-tilt-max-glare="0.1"
             >
               <img
                 src="./images/taxiboss1.png"
@@ -297,8 +316,11 @@
                 alt="Taxi Boss logo"
                 class="absolute w-48 h-auto -right-12 -bottom-12"
               />
-            </div>
+            </a>
             <div
+              data-tilt
+              data-tilt-glare="true"
+              data-tilt-max-glare="0.1"
               class="w-full md:w-[33vw] md:h-[20vw] bg-gray-900 w-full rounded-2xl mb-12 overflow-hidden relative shadow-lg shadow-black"
             >
               <img
@@ -345,6 +367,14 @@
     </div>
 
     <script>
+      $(document).ready(function () {
+        $('.js-tilt').tilt({
+          glare: true,
+          maxGlare: 0.5,
+        });
+      });
+    </script>
+    <script>
       const counters = document.querySelectorAll('.value');
       const speed = 200;
 
@@ -369,5 +399,11 @@
         animate();
       });
     </script>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.js"
+      integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tilt.js/1.2.1/tilt.jquery.min.js"></script>
   </body>
 </html>
