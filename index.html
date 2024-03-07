@@ -361,15 +361,6 @@
         ></a>
       </footer>
     </div>
-
-    <script>
-      $(document).ready(function () {
-        $('.js-tilt').tilt({
-          glare: true,
-          maxGlare: 0.5,
-        });
-      });
-    </script>
     <script>
       const counters = document.querySelectorAll('.value');
       const speed = 200;
@@ -378,21 +369,37 @@
         return num.toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1,');
       }
 
-      counters.forEach((counter) => {
-        const animate = () => {
-          const value = +counter.getAttribute('akhi');
-          const data = +counter.innerText;
+      const options = {
+        root: null,
+        rootMargin: '0px',
+        threshold: 0.1,
+      };
 
-          const time = value / speed;
-          if (data < value) {
-            counter.innerText = Math.ceil(data + time);
-            setTimeout(animate, 1);
-          } else {
-            counter.innerText = formatNumber(value);
+      let observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach((entry) => {
+          console.log(entry);
+          if (entry.isIntersecting) {
+            const target = entry.target;
+            const value = +target.getAttribute('akhi');
+            const speed = 200;
+            const animate = () => {
+              const data = +target.innerText;
+              const time = value / speed;
+              if (data < value) {
+                target.innerText = Math.ceil(data + time);
+                setTimeout(animate, 1);
+              } else {
+                target.innerText = formatNumber(value);
+              }
+            };
+            animate();
+            observer.unobserve(target);
           }
-        };
+        });
+      }, options);
 
-        animate();
+      counters.forEach((counter) => {
+        observer.observe(counter);
       });
     </script>
     <script
