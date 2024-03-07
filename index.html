@@ -96,7 +96,7 @@
       }
 
       .small-text {
-        font-size: 1rem;
+        font-size: 0.75rem;
       }
 
       .sun-green {
@@ -130,7 +130,7 @@
         }
 
         .value {
-          font-size: 2rem;
+          font-size: 1.5rem;
         }
 
         .small-text {
@@ -154,22 +154,22 @@
       class="gray-bg white-text rounded-2xl rounded-2xl shadow-black shadow-lg relative"
     >
       <header
-        class="absolute w-full pt-10 px-10 sm:pt-10 sm:px-20 rounded-2xl flex justify-between items-center pb-0 z-50"
+        class="absolute w-full pt-4 px-4 sm:pt-10 sm:px-10 rounded-2xl flex justify-between items-start pb-0 z-50"
       >
         <div class="flex items-center space-x-4">
           <img
             src="./images/logo.png"
             alt="Zaber Studios logo"
-            class="mx-auto w-16 h-auto"
+            class="mx-auto w-12 md:w-16 h-auto"
           />
           <div class="italic text-xl sm:text-4xl">ZABER STUDIOS</div>
         </div>
-        <a href="#contact" class="purple-text">CONTACT</a>
+        <a href="#contact" class="md:block hidden purple-text">CONTACT</a>
       </header>
 
       <main>
         <section
-          class="flex flex-col h-screen p-10 sm:p-20 relative hero bg-contain bg-no-repeat bg-hero rounded-t-xl overflow-hidden"
+          class="flex flex-col h-screen p-10 md:p-20 relative hero bg-contain bg-no-repeat bg-hero rounded-t-xl overflow-hidden"
         >
           <img
             src="./images/hero.jpeg"
@@ -177,15 +177,17 @@
             class="sm:visible invisible w-[150vw] h-auto -right-[40vw] -bottom-[20vw] absolute -rotate-[35deg]"
           />
           <p
-            class="hero-text sm:w-3/4 mt-24 mb-20 z-40 sm:text-left text-center bungee-regular"
+            class="hero-text w-full md:w-3/4 mt-20 md:mt-10 md:ml-10 mb-20 z-40 sm:text-left text-center bungee-regular"
           >
             DEVELOPING TOP TIER GAMES ON
             <span class="bungee-outline">ROBLOX</span>
           </p>
-          <div class="flex flex-col items-center justify-center sm:mr-auto">
+          <div
+            class="flex flex-col items-center justify-center md:mr-auto md:ml-10"
+          >
             <a
               href="#about"
-              class="text-2xl text-center bg-[#C32EFF] p-4 rounded-md hover:bg-[#8A2BE2] transition-all duration-300"
+              class="text-lg md:text-2xl text-center bg-[#C32EFF] p-4 rounded-md hover:bg-[#8A2BE2] transition-all duration-300"
               >Learn More</a
             >
             <div class="text-4xl">&#8595;</div>
@@ -193,7 +195,7 @@
         </section>
 
         <section
-          class="text-center flex flex-col p-4 md:p-20 gap-6 sm:gap-20 justify-center items-center min-h-screen text-[#C32EFF] text-lg sm:text-2xl !bungee-inline"
+          class="text-center flex flex-col p-10 md:p-20 gap-6 sm:gap-20 justify-center items-center min-h-screen text-[#C32EFF] text-lg sm:text-2xl !bungee-inline"
           id="about"
         >
           <div class="white-text">Some of our Numbers</div>
@@ -204,15 +206,15 @@
               data-tilt
               data-tilt-glare="true"
               data-tilt-max-glare="0.1"
-              class="bg-gray-900 rounded-2xl shadow-lg shadow-black relative overflow-hidden w-full md:w-[33vw] md:h-[20vw] flex flex-col justify-between"
+              class="bg-gray-900 rounded-2xl shadow-lg shadow-black relative overflow-hidden w-full w-full h-[45vw] md:w-[33vw] md:h-[20vw] flex flex-col justify-between md:justify-around"
             >
-              <div class="mt-10 mx-10 z-50">
+              <div class="mt-6 mx-6 md:mt-10 mx-10 z-50">
                 <p class="font-bold value" akhi="250000000">0</p>
                 <p class="small-text white-text">visits</p>
               </div>
               <div class="flex items-center justify-end w-full">
                 <p
-                  class="basis-1/2 text-sm md:text-lg white-text md:mt-0 m-10 bungee-regular z-30"
+                  class="basis-1/2 text-sm md:text-2xl white-text md:mt-0 m-10 mt-0 bungee-regular z-30"
                 >
                   THAT'S 3X THE POPULATION OF GERMANY!
                 </p>
@@ -230,17 +232,17 @@
               data-tilt
               data-tilt-glare="true"
               data-tilt-max-glare="0.1"
-              class="bg-gray-900 rounded-2xl shadow-lg shadow-black relative overflow-hidden w-full md:w-[33vw] md:h-[20vw] flex flex-col justify-between relative"
+              class="bg-gray-900 rounded-2xl shadow-lg shadow-black relative overflow-hidden w-full h-[45vw] md:w-[33vw] md:h-[20vw] flex flex-col justify-between md:justify-around"
             >
-              <div class="mt-10 mx-10 z-50">
+              <div class="mt-6 mx-6 md:mt-10 md:mx-10 z-50">
                 <p class="font-bold value" akhi="2800000">0</p>
-                <p class="small-text white-text">Monthly Active Users</p>
+                <p class="small-text white-text">Monthly Active Users (MAU)</p>
               </div>
               <div class="flex items-center gap-4 w-full">
                 <p
-                  class="basis-1/2 text-sm md:text-lg white-text md:mt-0 m-10 z-30"
+                  class="basis-1/2 text-sm md:text-2xl white-text md:mt-0 m-10 mt-0 z-30"
                 >
-                  32X FULL CAPACITY WEMBLEY STADIUMS!
+                  32 FULL WEMBLEY STADIUMS!
                 </p>
               </div>
               <div
@@ -257,19 +259,17 @@
             data-tilt
             data-tilt-glare="true"
             data-tilt-max-glare="0.1"
-            class="bg-gray-900 rounded-2xl shadow-lg shadow-black relative overflow-hidden w-full md:w-[33vw] md:h-[20vw] flex flex-col justify-between card"
+            class="bg-gray-900 rounded-2xl shadow-lg shadow-black relative overflow-hidden w-full h-[45vw] md:w-[33vw] md:h-[20vw] flex flex-col justify-between md:justify-around"
           >
             <div
               class="sun-green w-[300px] h-[300px] absolute -right-[100px] -top-[100px] z-0"
             ></div>
-            <div class="mt-10 mx-10 z-50">
+            <div class="mt-6 mx-6 md:mt-10 md:mx-10 z-50">
               <p class="font-bold value" akhi="80000000">0</p>
               <p class="small-text white-text">HOURS PLAYED</p>
             </div>
             <div class="flex items-center justify-end w-full">
-              <p
-                class="basis-1/2 text-sm md:text-lg white-text md:mt-0 m-10 z-30"
-              >
+              <p class="basis-1/2 text-sm md:text-2xl white-text m-10 z-30">
                 THAT'S 9,133 YEARS!
               </p>
             </div>
@@ -302,15 +302,17 @@
               data-tilt-glare="true"
               data-tilt-max-glare="0.1"
             >
-              <img
-                src="./images/taxiboss1.png"
-                alt="Taxi Boss logo"
-                class="w-full h-full rounded-2xl"
-              />
+              <div class="w-full h-full rounded-2xl overflow-hidden">
+                <img
+                  src="./images/taxiboss1.png"
+                  alt="Taxi Boss"
+                  class="w-full h-full"
+                />
+              </div>
               <img
                 src="./images/TaxiBossLogo.png"
                 alt="Taxi Boss logo"
-                class="absolute w-48 h-auto -right-12 -bottom-12"
+                class="absolute w-48 h-auto -right-12 -bottom-12 z-50"
               />
             </a>
             <div
@@ -325,13 +327,15 @@
                 class="w-full h-full invisible"
               />
               <div
-                class="absolute w-full h-full p-8 flex items-center justify-center right-0 top-0 bottom-0 text-sm flex-wrap font-bold text-xl"
+                class="absolute w-full h-full flex right-0 top-0 bottom-0 text-sm flex-wrap font-bold text-xl"
               >
-                <div class="w-1/2 mb-12 z-50">NEW TITLE COMING SOON ...</div>
+                <div class="w-1/2 z-50 pt-6 pl-6 md:pt-12 md:pl-12 text-sm">
+                  NEW TITLE COMING SOON ...
+                </div>
                 <img
                   src="./images/construction.png"
                   alt="Coming soon"
-                  class="w-1/2 scale-x-[-1]"
+                  class="w-[40%] h-[90%] scale-x-[-1] relative -bottom-[10%] -right-[5%] pt-6 md:pt-12"
                 />
                 <div
                   class="sun-purple w-[300px] h-[300px] absolute -bottom-[100px] -left-[100px]"
@@ -343,22 +347,24 @@
       </main>
 
       <footer
-        class="text-center pb-8 flex items-center justify-center gap-4 font-bold"
+        class="text-center pb-8 flex flex-col items-center justify-center gap-2 font-bold"
         id="contact"
       >
-        <div>Contact Us:</div>
-        <a
-          href="mailto:taxibossroblox@gmail.com"
-          class="white-text hover:text-green-500"
-        >
-          <i class="fa fa-envelope text-2xl"></i>
-        </a>
-        <a
-          href="https://www.linkedin.com/company/zaber-studios/"
-          class="white-text hover:text-green-500"
-        >
-          <i class="fab fa-linkedin-in text-2xl"></i
-        ></a>
+        <div>Contact Us</div>
+        <div class="flex items-center justify-center gap-4 font-bold">
+          <a
+            href="mailto:taxibossroblox@gmail.com"
+            class="white-text hover:text-green-500"
+          >
+            <i class="fa fa-envelope text-2xl"></i>
+          </a>
+          <a
+            href="https://www.linkedin.com/company/zaber-studios/"
+            class="white-text hover:text-green-500"
+          >
+            <i class="fab fa-linkedin-in text-2xl"></i
+          ></a>
+        </div>
       </footer>
     </div>
     <script>
@@ -400,6 +406,16 @@
 
       counters.forEach((counter) => {
         observer.observe(counter);
+      });
+
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener('click', function (e) {
+          e.preventDefault();
+
+          document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth',
+          });
+        });
       });
     </script>
     <script
